@@ -1,0 +1,122 @@
+.footer {
+    padding: 50px 0;
+    background-color: $--color-primary;
+
+    .form-field {
+        width: calc(50% - 10px);
+    }
+
+    .textarea-field {
+        width: 100%;
+    }
+    textarea, 
+    .form-field input{
+        background-color: $--color-dark-blue;
+        border: none;
+        color:#fff;
+
+        &::placeholder {
+            color: $--color-grey;
+        }
+    }
+
+    p {
+        color: #fff;
+        margin: 0;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        color: $--color-secondary;
+        margin-bottom: 15px;
+        width: 200px;
+
+        i {
+            font-size: 30px;
+        }
+    }
+
+    &-form {
+        &-gab {
+            gap: 15px;
+        }
+    }
+
+    .map-bg {
+        padding-left: 50px;
+        background-image: url('../images/map.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    
+}
+
+.copyright {
+    background-color: $--color-dark-blue;
+    padding: 50px 0;
+
+    p {
+        color: #fff;
+        margin: 0 0 0 10px ;
+    
+    }
+
+    a {
+        text-decoration: none;
+        margin: 5px;
+    }
+
+    i {
+        font-size: 20px;
+        color: $--color-grey;
+
+        &:hover {
+            color: $--color-secondary;
+        }
+    }
+}
+
+.fixed-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: $--color-secondary;
+    border-left: none;
+    border-right: none;
+    border-top:none ;
+    
+
+    img {
+        width: auto;
+        height: 50px;
+        float: right;
+    }
+}
+
+// --------------------------------------REM-------------------
+
+body {
+    font-size: 10px;
+}
+
+
+@media only screen and (min-width:448px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+.copyright {
+    p {
+        font-size: 1rem;
+    }
+}
+
+
